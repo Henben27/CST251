@@ -4,13 +4,22 @@ div#content {
     border: solid 1px #333333;
     height: 80vh;
 }
-
+h1#header:hover{
+  font-size: 250%;
+  
+}
 h1, h2, h3 {
     font-family: "Courier New", monospace;
 }
 img{
       width: 350px;
+      float: right;
       height: auto;
+      transition: all 0.5s;
+  }
+  img:hover{
+    width: 400px;
+    max-width: 400px;
   }
 
   body {
