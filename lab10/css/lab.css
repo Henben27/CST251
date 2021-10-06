@@ -16,12 +16,16 @@ img{
       float: right;
       height: auto;
       transition: all 0.5s;
-      border: solid 10px black;
+      border: solid 10px royalblue;
   }
   img:hover{
-    width: 50%;
+    width: 25%;
   }
-
+p{
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  line-height: 20px;
+}
   body {
       font-family: Helvetica, Verdana, Arial, "san serif";
       background-color: #ffbb2fed;
@@ -30,6 +34,7 @@ img{
   }
   a {
       color: purple;
+      text-decoration: none;
   }
   a:hover {
       text-decoration: underline;
