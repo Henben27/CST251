@@ -1,26 +1,41 @@
-div#content {
+main#content {
     padding: 50px;
     background-color: skyblue;
     border: solid 5px darkorange;
     height: 80vh;
     margin: 10px 10px 0px 10px;
 }
+
 h1#header:hover{
   font-size: 250%;
 }
+
 h1, h2, h3 {
     font-family: "Courier New", monospace;
 }
+
 img{
-      width: 350px;
-      float: right;
+      width: 300px;
+      position: absolute;
+      bottom: 0px;
+      right: 55px;
       height: auto;
       transition: all 0.5s;
-      border: solid 10px royalblue;
+      border: solid 5px royalblue;
   }
+
   img:hover{
-    width: 25%;
+    width: 20%;
   }
+
+  #content div{
+    border: solid 2px grey;
+    background-color: darkgrey;
+    padding: 8px;
+    margin: 10px 550px 10px 10px;
+    min-width: 300px;
+  }
+
 p{
   letter-spacing: 2px;
   word-spacing: 5px;
@@ -32,11 +47,39 @@ p{
       padding: 25px;
       font-size: 120%;
   }
+
   a {
-      color: purple;
+      color: white;
       text-decoration: none;
   }
+
   a:hover {
       text-decoration: underline;
       text-decoration-style: wavy;
+  }
+
+  nav#links{
+    display: inline-flex;
+    position: sticky;
+    top: 40px;
+    margin: auto;
+    Background-color: royalblue;
+    overflow: hidden;
+    line-height: 60px;
+    width: auto;
+    word-spacing: 2px;
+    top: 0px;
+
+  }
+
+  aside#sidebar{
+    display: inline-block;
+    width:30%;
+    min-width: 300px;
+    right: 50px;
+    position: absolute;
+    border: ;
+  }
+  aside#sidebar p{
+        line-height: 35px;
   }
