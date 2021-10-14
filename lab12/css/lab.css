@@ -5,21 +5,25 @@ div#content {
     height: 80vh;
     margin: 10px 10px 0px 10px;
 }
-h1#header:hover{
-  font-size: 250%;
+h1:hover{
+  font-size: 210%;
+  transition: all .3s;
 }
 h1, h2, h3 {
     font-family: "Courier New", monospace;
 }
-img{
-      width: 350px;
-      float: right;
-      height: auto;
-      transition: all 0.5s;
-      border: solid 10px royalblue;
+div#image img{
+    width: 150px;
+    float: right;
+    height: auto;
+    border: solid 5px royalblue;
   }
-  img:hover{
-    width: 25%;
+div#content img{
+      transition: all 0.5s;
+}
+div#content img:hover{
+    width: 200px;
+    height:auto;
   }
 p{
   letter-spacing: 2px;
@@ -27,14 +31,54 @@ p{
   line-height: 20px;
 }
   body {
-      font-family: Helvetica, Verdana, Arial, "san serif";
-      background-color: #ffbb2fed;
-      padding: 25px;
-      font-size: 120%;
+    font-family: Helvetica, Verdana, Arial, "san serif";
+    background-color: #ffbb2fed;
+    padding: 25px;
+    font-size: 120%;
+  }
+  div#floated{
+    width: 30%;
+    float: right;
+    clear: right;
+    border: dashed 5px royalblue;
+    text-align: right;
+  }
+  div#center-horz{
+    width: 30%;
+    text-align: center;
+    border:dashed 5px royalblue;
+  }
+  div#center-img{
+    width: 30%;
+    text-align: center;
+    position: relative;
+    float: right;
+    clear: left;
+  }
+  div#center-img img{
+    width:150px;
+  }
+  div#center-both{
+    width: 30%;
+    position: relative;
+    clear: left;
+    top: 140px;
+  }
+  div#center-both img{
+    width: 150px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
   }
   a {
       color: purple;
       text-decoration: none;
+      bottom:5px;
+      position: fixed;
+      bottom: 50px;
   }
   a:hover {
       text-decoration: underline;
