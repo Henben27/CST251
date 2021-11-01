@@ -1,7 +1,6 @@
 div#content {
     padding: 50px;
-    background-color: skyblue;
-    border: solid 5px darkorange;
+    background-image: url("paper.png");
     height: 80vh;
     margin: 10px 10px 0px 10px;
 }
@@ -12,14 +11,18 @@ h1, h2, h3 {
     font-family: "Courier New", monospace;
 }
 img{
-      width: 350px;
+      clear: right;
+      position: relative;
+      width: 300px;
       float: right;
       height: auto;
-      transition: all 0.5s;
+      transition: width 1s, border 1.5s;
       border: solid 10px royalblue;
+      bottom: -60px;
   }
   img:hover{
-    width: 25%;
+    width: 400px;
+    border: solid 10px #12b912;
   }
 p{
   letter-spacing: 2px;
@@ -28,7 +31,8 @@ p{
 }
   body {
       font-family: Helvetica, Verdana, Arial, "san serif";
-      background-color: #ffbb2fed;
+      background-image: url("leather.png");
+      background-color: none;
       padding: 25px;
       font-size: 120%;
   }
@@ -39,4 +43,7 @@ p{
   a:hover {
       text-decoration: underline;
       text-decoration-style: wavy;
+  }
+  div#description{
+    column-count: 3;
   }
